@@ -18,7 +18,7 @@ def count_tokens(text, model_name="cl100k_base"):
     return len(enc.encode(text))
 
 # Создание/загрузка векторной базы
-embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+embedding_model = HuggingFaceEmbeddings(model_name="ai-forever/ru-en-RoSBERTa")
 vectorstore_path = "faiss_index"
 
 if os.path.exists(vectorstore_path):
